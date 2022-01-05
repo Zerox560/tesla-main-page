@@ -19,7 +19,7 @@ function Section({ title, description, topBtn, botBtn, image }) {
                     )
                     }
                 </ButtonWrapper>
-                <DownArrow src="/images/down-arrow.svg" />
+                <DownArrow src="/images/down-arrow.svg" onClick={() => window.scroll({ behavior: "smooth", top: window.scrollY + 630 })} />
             </Buttons>
         </Wrap>
     )

@@ -1,8 +1,23 @@
+import { Container, Menu, RightMenu, CustomMenu } from "./HeaderStyles";
+
 function Header() {
     return (
-        <div>
-            <h1>Tesla</h1>
-        </div>
+        <Container>
+            <a href="/">
+                <img src="/images/logo.svg" alt="Logo de tesla" />
+            </a>
+            <Menu>
+                <a href="/">Model S</a>
+                <a href="/">Model 3</a>
+                <a href="/">Model S</a>
+                <a href="/">Model Y</a>
+            </Menu>
+            <RightMenu>
+                <a href="/">Shop</a>
+                <a href="/">Account</a>
+                <CustomMenu />
+            </RightMenu>
+        </Container>
     )
 }
 
